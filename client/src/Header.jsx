@@ -9,12 +9,12 @@ export default function Header() {
 
   return (
     <header className="relative flex flex-col md:flex-row md:justify-between items-center p-4 mt-0">
-      <div className="flex justify-between w-full md:w-auto">
-        <Link to="/" className="flex items-center gap-1 flex-shrink-0 mb-4 md:mb-0 order-2 md:order-2">
+      <div className="flex justify-between items-center w-full md:w-auto">
+        <Link to="/" className="flex justify-center gap-1 flex-shrink-0 mb-4 md:mb-0">
           <img src={logo} alt="Logo" className="w-44 h-30 mx-auto" />
         </Link>
         <button
-          className="block md:hidden bg-cyan-300 rounded-2xl"
+          className="block md:hidden bg-cyan-300 rounded-2xl w-8 h-8"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -34,8 +34,8 @@ export default function Header() {
         </button>
       </div>
 
-      <div className={`flex-col md:flex-row md:flex ${menuOpen ? 'flex' : 'hidden'} md:items-center`}>
-        <ul className="flex flex-col md:flex-row md:gap-4">
+      <div className={`flex-col md:flex-row md:flex ${menuOpen ? 'flex' : 'hidden'} md:items-center w-full md:w-auto`}>
+        <ul className="flex flex-col md:flex-row md:gap-4 w-full md:w-auto">
           <li className="md:mb-0 mb-2">
             <Link to="/list-property" className="text-gray-700 hover:text-gray-900">List your Property</Link>
           </li>
@@ -44,7 +44,7 @@ export default function Header() {
           </li>
         </ul>
         
-        <Link to={user ? '/account' : '/login'} className="md:ml-4">
+        <Link to={user ? '/account' : '/login'} className="md:ml-4 flex items-center md:items-end">
           <div className="bg-cyan-300 text-white rounded-full p-2 overflow-hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"

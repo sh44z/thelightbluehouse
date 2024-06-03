@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className=" flex bg-gray-100 text-black text-center p-4 w-full" >
+    <footer className=" flex bg-gray-100 text-black text-center p-4 w-full mt-4" >
       <div div className="mx-auto">
         <div>
           <Link to={"/terms"}>Terms of Use</Link>
