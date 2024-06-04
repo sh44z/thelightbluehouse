@@ -15,7 +15,7 @@ import BookingPage from './pages/BookingPage'
 import TermsPage from './pages/TermsPage'
 
 
-axios.defaults.baseURL = "http://localhost:7000";
+axios.defaults.baseURL = "https://thelightbluehouse.onrender.com";
 axios.defaults.withCredentials = true;
 
 

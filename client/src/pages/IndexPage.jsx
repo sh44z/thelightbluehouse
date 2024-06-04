@@ -19,7 +19,7 @@ const IndexPage = () => {
         <Link to={"/places/"+place._id} key={place._id}>
           <div className=' mb-2 rounded-2xl flex'>
             {place.addedPhotos?.[0] && (
-            <img className='rounded-2xl aspect-square object-cover' alt="alt" src={"http://localhost:7000/uploads/"+place.addedPhotos?.[0]} />
+            <img className='rounded-2xl aspect-square object-cover' alt="alt" src={"https://thelightbluehouse.onrender.com/uploads/"+place.addedPhotos?.[0]} />
           )}
           
           </div>

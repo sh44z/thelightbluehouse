@@ -36,7 +36,7 @@ if (showAllPhotos) {
                 </div>
                 {place?.addedPhotos?.length > 0 && place.addedPhotos.map(photo => (
                 <div>
-                    <img src={"http://localhost:7000/uploads/"+photo } />
+                    <img src={"https://thelightbluehouse.onrender.com/uploads/"+photo } />
                 </div>
                     )) }    
             </div>

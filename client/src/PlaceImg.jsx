@@ -12,7 +12,7 @@ const PlaceImg = ({place, index=0, className=null}) => {
   return (
     
        
-      <img className={className} src={"http://localhost:7000/uploads/"+place.addedPhotos[index]} alt='' />
+      <img className={className} src={"https://thelightbluehouse.onrender.com/uploads/"+place.addedPhotos[index]} alt='' />
     
     
    
