@@ -21,7 +21,7 @@ const PlaceGallery = ({place}) => {
                     </div>
                     {place?.addedPhotos?.length > 0 && place.addedPhotos.map(photo => (
                     <div>
-                        <img src={"https://thelightbluehouse.onrender.com/uploads/"+photo } />
+                        <img src={"https://localhost:7000/uploads/"+photo } />
                     </div>
                         )) }    
                 </div>
@@ -37,16 +37,16 @@ const PlaceGallery = ({place}) => {
             <div className='grid gap-2 grid-cols-[2fr_1fr] overflow-hidden'>
                  <div>
                     {place.addedPhotos?.[0] && (
-                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer' src={"https://thelightbluehouse.onrender.com/uploads/"+place.addedPhotos[0]} alt='' /> 
+                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer' src={"https://localhost:7000/uploads/"+place.addedPhotos[0]} alt='' /> 
                     )}
                 </div>
             <div className='grid'>
                 {place.addedPhotos?.[1] && (
-                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer' src={"https://thelightbluehouse.onrender.com/uploads/"+place.addedPhotos[1]} alt='' /> 
+                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer' src={"https://localhost:7000/uploads/"+place.addedPhotos[1]} alt='' /> 
                 )}
                 <div className='overflow-hidden'>
                 {place.addedPhotos?.[2] && (
-                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer relative top-2' src={"https://thelightbluehouse.onrender.com/uploads/"+place.addedPhotos[2]} alt='' /> 
+                    <img onClick={() => setShowAllPhotos(true)} className='aspect-square object-cover cursor-pointer relative top-2' src={"https://localhost:7000/uploads/"+place.addedPhotos[2]} alt='' /> 
                 )}
                 </div>
                 
